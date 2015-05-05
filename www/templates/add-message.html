@@ -1,0 +1,26 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">My Modal title</h1>
+        <button class="button button-icon ion-ios-close-empty" ng-click="closeNewMessage()"></button>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="addMessage(message)">
+            <label class="item item-input">
+                <textarea style="resize: none" ng-model="message.lastText" msd-elastic="\n" placeholder="Message"></textarea>
+            </label>
+            <div class="padding">
+                <button type="submit" class="button button-block button-positive">Submit</button>
+            </div>
+        </form>
+        <!--<label class="item item-input">-->
+            <!--<span class="input-label">Username</span>-->
+            <!--<input type="date">-->
+        <!--</label>-->
+    </ion-content>
+</ion-modal-view>

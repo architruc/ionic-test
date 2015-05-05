@@ -1,0 +1,11 @@
+{
+  "name": "ionic1",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-rc.1"
+  },
+  "dependencies": {
+    "angular-elastic": "~2.4.2",
+    "ngCordova": "~0.1.14-alpha"
+  }
+}
