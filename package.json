@@ -24,7 +24,15 @@
     "webpack": "^1.8.5"
   },
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install"
+    "postinstall": "node_modules/.bin/bower install && ionic platform add android && cordova plugin add com.ionic.keyboard && cordova plugin add io.litehelpers.cordova.sqlite && cordova plugin add org.apache.cordova.console && cordova plugin add org.apache.cordova.device"
   },
-  "cordovaPlugins": []
+  "cordovaPlugins": [
+    "com.ionic.keyboard",
+    "io.litehelpers.cordova.sqlite",
+    "org.apache.cordova.console",
+    "org.apache.cordova.device"
+  ],
+  "cordovaPlatforms": [
+    "android"
+  ]
 }
